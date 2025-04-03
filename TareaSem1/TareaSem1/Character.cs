@@ -15,5 +15,7 @@ namespace TareaSem1
         { 
             this.name = name; 
         }
+
+        public abstract void ShowStatus();
     }
 }
