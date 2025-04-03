@@ -22,8 +22,13 @@ namespace Trabajo1_Semana1
 
         public void GainExp(int experience)
         {
-            this.experience += experience;
-            if (this.experience > 0)
+            experience += experience;
+            if (experience >= level * 100)
+            {
+                experience = 0;
+                level++;
+                Console.WriteLine($"¡Subiste de nivel! Ahora eres nivel {level}");
+            }
         }
     }
 }

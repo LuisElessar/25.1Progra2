@@ -13,6 +13,7 @@ namespace Trabajo1_Semana1
         public void Execute()
         {
             CreatePlayer();
+            GainExperienceMenu();
         }
 
         private void CreatePlayer()
@@ -47,7 +48,7 @@ namespace Trabajo1_Semana1
                         player.GainExp(100);
                         Console.WriteLine($"Nueva experiencia obtenida: {player.Experience}, Nivel: {player.Level}");
                         break;
-                    case "3":
+                    case "0":
                         player.GainExp(100);
                         Console.WriteLine($"Nueva experiencia obtenida: {player.Experience}, Nivel: {player.Level}");
                         break;
